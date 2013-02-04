@@ -28,7 +28,7 @@
 /** Least Recently Used (LRU/1) single threaded template based implementation
  */
 template < typename KEY = std::string, typename VALUE = std::string, typename HASHER = std::hash<KEY> >
-class lrc
+class lru_cache
 {
 private:
     typedef KEY key_type;
@@ -55,12 +55,12 @@ private:
     typedef std::unordered_map<key_type, cache_value_type, HASHER > cache_container;
     
 public:
-    lrc()
+    lru_cache()
     {
         _bound = 0;
     }
     
-    ~lrc()
+    ~lru_cache()
     {
     }
     

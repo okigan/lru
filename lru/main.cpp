@@ -14,7 +14,7 @@
 #include <cmath>
 #include <fstream>
 
-#include "lru.hxx"
+#include "lru_cache.cpp"
 
 //#define LRU_TEST
 
@@ -99,7 +99,7 @@ void process(FILE * in, FILE * out)
     // command_number = 99;
     
     //lrc<short_string, short_string, custom_hash> lrc;
-    lrc<std::string, std::string> lrc;
+    lru_cache<std::string, std::string> lrc;
     
     for(int index = 0; index < command_number; index++) {
         char command[20] = {0};

@@ -6,6 +6,11 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		78D6782616BF84C10024BCB7 /* lru_cache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78D6782316BF84980024BCB7 /* lru_cache.cpp */; };
+		78D6782716BF84C40024BCB7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78D6782516BF84980024BCB7 /* main.cpp */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		78928200169C17AF001C408A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -21,7 +26,9 @@
 /* Begin PBXFileReference section */
 		78928202169C17AF001C408A /* lru */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lru; sourceTree = BUILT_PRODUCTS_DIR; };
 		78BE0BCA16BF790600987880 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.md; sourceTree = "<group>"; };
-		78BE0BCB16BF7D9F00987880 /* lru */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lru; sourceTree = "<group>"; };
+		78D6782316BF84980024BCB7 /* lru_cache.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = lru_cache.cpp; sourceTree = "<group>"; };
+		78D6782416BF84980024BCB7 /* lru_cache.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = lru_cache.hpp; sourceTree = "<group>"; };
+		78D6782516BF84980024BCB7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +45,7 @@
 		789281F7169C17AF001C408A = {
 			isa = PBXGroup;
 			children = (
-				78BE0BCB16BF7D9F00987880 /* lru */,
+				78D6782216BF84980024BCB7 /* lru */,
 				78BE0BCA16BF790600987880 /* readme.md */,
 				78928203169C17AF001C408A /* Products */,
 			);
@@ -50,6 +57,16 @@
 				78928202169C17AF001C408A /* lru */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		78D6782216BF84980024BCB7 /* lru */ = {
+			isa = PBXGroup;
+			children = (
+				78D6782316BF84980024BCB7 /* lru_cache.cpp */,
+				78D6782416BF84980024BCB7 /* lru_cache.hpp */,
+				78D6782516BF84980024BCB7 /* main.cpp */,
+			);
+			path = lru;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,6 +120,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78D6782716BF84C40024BCB7 /* main.cpp in Sources */,
+				78D6782616BF84C10024BCB7 /* lru_cache.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,7 +131,7 @@
 		7892820A169C17AF001C408A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -142,7 +161,7 @@
 		7892820B169C17AF001C408A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
