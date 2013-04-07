@@ -17,7 +17,7 @@
 #include "lru_cache.cpp"
 
 //#define LRU_TEST
-
+/*
 template <typename T, unsigned int N>
 int get_array_length( const T a[N] ) {
     return N;
@@ -86,7 +86,7 @@ public:
         return hash;
     }
 };
-
+*/
 
 void process(FILE * in, FILE * out)
 {
