@@ -7,4 +7,4 @@ set( CMAKE_CXX_FLAGS ${CMAKE_CXX_FLAGS} -std=c++0x )
 file( GLOB_RECURSE HEADERS *.h *.hpp *.hxx)
 file( GLOB_RECURSE SOURCES *.cpp )
 
-add_library( ${PROJECT_NAME} SHARED ${SOURCES} ${HEADERS} )
+add_executable( ${PROJECT_NAME} ${SOURCES} ${HEADERS} )
